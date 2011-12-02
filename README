@@ -1,7 +1,7 @@
 FlashPunk Touch Controls
 ========================
 
-Touch Controls that dispatch KeyBoardEvents for FlashPunk mobile games.
+Touch cntrols that dispatch keyboard events for FlashPunk mobile games.
 
 Dpad : 4 / 8 way dpad thumb control. Dispatches arrow key keyboard events.
 TouchKey : Thumb button that mimicks specified keyboard key.
