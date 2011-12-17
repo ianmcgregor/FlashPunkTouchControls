@@ -5,11 +5,11 @@ package {
 	/**
 	 * @author ian
 	 */
-	public class Main extends Engine {
-		public function Main() {
+	public class Dpad4WayMain extends Engine {
+		public function Dpad4WayMain() {
 			super(800, 480, 60, false);
-
-			FP.world = new MyWorld();
+			FP.screen.color = 0xFFFFFF;
+			FP.world = new World4Way();
 			FP.console.enable();
 		}
 	}

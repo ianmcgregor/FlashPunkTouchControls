@@ -37,7 +37,7 @@ package org.alwaysinbeta.games.ui.graphics{
 			}
 
 			if(centerRadius > 0){
-				g.beginFill(0x000000, 0);
+				g.beginFill(0x000000, 1);
 				g.drawCircle(radius, radius, centerRadius);
 //				g.endFill();
 			}

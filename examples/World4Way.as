@@ -9,8 +9,8 @@ package {
 	/**
 	 * @author ian
 	 */
-	public class MyWorld extends World {
-		public function MyWorld() {
+	public class World4Way extends World {
+		public function World4Way() {
 			add(new Player());
 			add(new Dpad(20, 300, false));
 			add(new TouchKey(600, 360, Keyboard.X, 0xFF0000));

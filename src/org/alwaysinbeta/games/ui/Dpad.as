@@ -56,9 +56,14 @@ package org.alwaysinbeta.games.ui {
 			// super(x, y, graphic, mask);
 			_is8Way = is8Way;
 
-			var image : Image = _is8Way ? new Dpad8Way(_maxDistance, _minDistance) : new Dpad4Way(_maxDistance, _minDistance);
-			graphic = image;
-			setHitbox(image.width, image.height);
+			//var image : Image = _is8Way ? new Dpad8Way(_maxDistance, _minDistance) : new Dpad4Way(_maxDistance, _minDistance);
+			//graphic = image;
+			//setHitbox(image.width, image.height);
+			if(!graphic)graphic = _is8Way ? new Dpad8Way(_maxDistance, _minDistance) : new Dpad4Way(_maxDistance, _minDistance);
+			this.graphic = graphic;
+			setHitboxTo(graphic);
+			
+			graphic.scrollX = graphic.scrollY = 0;
 
 			this.x = x;
 			this.y = y;

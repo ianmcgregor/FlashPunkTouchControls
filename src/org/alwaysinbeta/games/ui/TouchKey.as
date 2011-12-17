@@ -24,6 +24,8 @@ package org.alwaysinbeta.games.ui {
 			var image : Image = new KeyGraphic(keyCode, color);
 			graphic = image;
 			setHitbox(image.width, image.height);
+			
+			graphic.scrollX = graphic.scrollY = 0;
 
 			this.x = x;
 			this.y = y;
